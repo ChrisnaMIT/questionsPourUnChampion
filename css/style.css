@@ -29,11 +29,48 @@ html, body{
 }
 
 .partThree{
-    display: flex;
+   display: flex;
     justify-content: center;
     align-items: center;
-    width: 900px;
-    height: 220px;
+    width: 1500px;
+    height: 350px;
     border: 3px solid black;
     font-size: 35px;
 }
+.cadreReponseUne{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 140px;
+    gap: 50px;
+
+
+}
+
+
+.cadreReponseDeux{
+    display: flex;
+    justify-content: center;
+    padding-top: 140px;
+    gap: 50px;
+    padding-right: 200px;
+}
+
+
+.reponseAChoisirA{
+    display: flex;
+    border: 2px solid black;
+    width: 450px;
+    height: 130px;
+
+}
+
+.reponseAChoisirB{
+    display: flex;
+    border: 2px solid black;
+    width: 450px;
+    height: 130px;
+
+}
+
+
+
