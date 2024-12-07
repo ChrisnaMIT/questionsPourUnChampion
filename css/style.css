@@ -3,7 +3,7 @@ html, body{
     padding: 0;
 }
 
-.partOne{
+.partieUne{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +20,7 @@ html, body{
     font-size: 35px;
 }
 
-.partTwo{
+.partieDeux{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@ html, body{
     padding-bottom: 40px;
 }
 
-.partThree{
+.partieTrois{
    display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,12 @@ html, body{
 
 
 
-.
+.cadreReponseUne{
+    display: grid;
+    gap: 10px
+
+
+}
 
 
 
