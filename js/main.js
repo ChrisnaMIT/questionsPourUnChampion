@@ -15,9 +15,9 @@ loadQuizzBouton.addEventListener('click',   () => { //Ajout d'un evenment click,
         .then(data => {
             const question = data.results[0].question;//création de la const question et on mets la data dans la constante question
             const reponseCorrect = data.results[0].correct_answer;
-            const reponseIncorrect = data.results[1].incorrect_answers;
-            const reponseIncorrectDeux = data.results[2].incorrect_answers;
-            const reponseIncorrectTroix = data.results[3].incorrect_answers;
+            const reponseIncorrect = data.results[0].incorrect_answers[0];
+            const reponseIncorrectDeux = data.results[0].incorrect_answers[1];
+            const reponseIncorrectTroix = data.results[0].incorrect_answers[2];
 
             console.log(data)
 
@@ -39,13 +39,15 @@ loadQuizzBouton.addEventListener('click',   () => { //Ajout d'un evenment click,
 
 });
 
+
 function choisirUneReponse(correctAnswer){
 
-    const bouton = document.querySelectorAll('#button')
+    const boutons = document.querySelectorAll('#cadreReponseUne button')
 
-    bouton.forEach(element => {
-        bouton.addEventListener('click',(event) => {
-            const choix = event.target.innerHTML;
+    boutons.forEach(element => {
+
+        button.addEventListener('click',(event) => {
+            const choix = event.target.textContent;
             if (choix === correctAnswer) {
                 alert('BONNE REPONSE');
             } else {
@@ -54,6 +56,7 @@ function choisirUneReponse(correctAnswer){
         });
     });
 }
+choisirUneReponse()
 
 
 
