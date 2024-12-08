@@ -27,7 +27,9 @@ loadQuizzBouton.addEventListener('click',   () => { //Ajout d'un evenment click,
             reponseD.innerHTML = reponseIncorrectTroix
             questionsContainer.innerHTML = question; // dans mon questionContainer, c'est la ou sera ma question
 
+
         })
+
         .catch(error => { // catch permet de gérer une erreur avec une api, si il y a une erreur sa affiche ce message
             questionsContainer.innerHTML = "Erreur lors du chargement de la question"; // si on a une erreur dans la question, sa affiche ce message dans le questionContainer
             reponseA.innerHTML = "Erreur ";
@@ -44,9 +46,9 @@ function choisirUneReponse(correctAnswer){
 
     const boutons = document.querySelectorAll('#cadreReponseUne button')
 
-    boutons.forEach(element => {
+    boutons.forEach((bouton) => {
 
-        button.addEventListener('click',(event) => {
+        bouton.addEventListener('click',(event) => {
             const choix = event.target.textContent;
             if (choix === correctAnswer) {
                 alert('BONNE REPONSE');
